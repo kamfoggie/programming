@@ -13,6 +13,7 @@
 		2EF5A16E1E3F063B00B8C284 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5A16C1E3F063B00B8C284 /* Main.storyboard */; };
 		2EF5A1701E3F063B00B8C284 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5A16F1E3F063B00B8C284 /* Assets.xcassets */; };
 		2EF5A1731E3F063B00B8C284 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5A1711E3F063B00B8C284 /* LaunchScreen.storyboard */; };
+		8A21BC24B03FCE21A8D3CA50 /* libPods-geekBrains2Objc1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F056D1C97B0038FE197C19 /* libPods-geekBrains2Objc1.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		2EF5A16F1E3F063B00B8C284 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EF5A1721E3F063B00B8C284 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EF5A1741E3F063B00B8C284 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68894195B0135A1D1DE9276E /* Pods-geekBrains2Objc1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geekBrains2Objc1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-geekBrains2Objc1/Pods-geekBrains2Objc1.debug.xcconfig"; sourceTree = "<group>"; };
+		9EFC269EF4E66040B8D29ADC /* Pods-geekBrains2Objc1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geekBrains2Objc1.release.xcconfig"; path = "Pods/Target Support Files/Pods-geekBrains2Objc1/Pods-geekBrains2Objc1.release.xcconfig"; sourceTree = "<group>"; };
+		B2F056D1C97B0038FE197C19 /* libPods-geekBrains2Objc1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-geekBrains2Objc1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A21BC24B03FCE21A8D3CA50 /* libPods-geekBrains2Objc1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22FE71543B928F13AAF856E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2F056D1C97B0038FE197C19 /* libPods-geekBrains2Objc1.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2EF5A1571E3F063A00B8C284 = {
 			isa = PBXGroup;
 			children = (
 				2EF5A1621E3F063B00B8C284 /* geekBrains2Objc1 */,
 				2EF5A1611E3F063B00B8C284 /* Products */,
+				430BEE0E5024DA33079F3DF3 /* Pods */,
+				22FE71543B928F13AAF856E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +94,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		430BEE0E5024DA33079F3DF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68894195B0135A1D1DE9276E /* Pods-geekBrains2Objc1.debug.xcconfig */,
+				9EFC269EF4E66040B8D29ADC /* Pods-geekBrains2Objc1.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2EF5A1771E3F063B00B8C284 /* Build configuration list for PBXNativeTarget "geekBrains2Objc1" */;
 			buildPhases = (
+				B3F8C352AE61A94B4CA92122 /* [CP] Check Pods Manifest.lock */,
 				2EF5A15C1E3F063B00B8C284 /* Sources */,
 				2EF5A15D1E3F063B00B8C284 /* Frameworks */,
 				2EF5A15E1E3F063B00B8C284 /* Resources */,
+				5A2C8B5075FDD9DB6E656A6A /* [CP] Embed Pods Frameworks */,
+				403BB92D6F624988E10F6205 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,6 +172,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		403BB92D6F624988E10F6205 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-geekBrains2Objc1/Pods-geekBrains2Objc1-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A2C8B5075FDD9DB6E656A6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-geekBrains2Objc1/Pods-geekBrains2Objc1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3F8C352AE61A94B4CA92122 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2EF5A15C1E3F063B00B8C284 /* Sources */ = {
@@ -269,10 +344,12 @@
 		};
 		2EF5A1781E3F063B00B8C284 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68894195B0135A1D1DE9276E /* Pods-geekBrains2Objc1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XK8B5HY366;
 				INFOPLIST_FILE = geekBrains2Objc1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.foggie.geekBrains2Objc1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -281,10 +358,12 @@
 		};
 		2EF5A1791E3F063B00B8C284 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EFC269EF4E66040B8D29ADC /* Pods-geekBrains2Objc1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XK8B5HY366;
 				INFOPLIST_FILE = geekBrains2Objc1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.foggie.geekBrains2Objc1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -310,6 +389,7 @@
 				2EF5A1791E3F063B00B8C284 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
